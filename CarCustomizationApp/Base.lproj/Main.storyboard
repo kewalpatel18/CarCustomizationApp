@@ -1,24 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CarCustomizationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HPT-TJ-orD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oI7-zK-igQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="818"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Select car body type" translatesAutoresizingMaskIntoConstraints="NO" id="Udy-Gm-uCF">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="818"/>
+                                                <color key="tintColor" red="0.2156862745" green="0.18039215689999999" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.94117647059999998" green="0.95294117649999999" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Udy-Gm-uCF" secondAttribute="bottom" id="3Os-cz-8N8"/>
+                                            <constraint firstAttribute="trailing" secondItem="Udy-Gm-uCF" secondAttribute="trailing" id="MOQ-d8-awP"/>
+                                            <constraint firstAttribute="bottom" secondItem="Udy-Gm-uCF" secondAttribute="bottom" id="h11-oD-fDw"/>
+                                            <constraint firstItem="Udy-Gm-uCF" firstAttribute="top" secondItem="oI7-zK-igQ" secondAttribute="top" id="h9o-XO-uq4"/>
+                                            <constraint firstAttribute="trailing" secondItem="Udy-Gm-uCF" secondAttribute="trailing" id="npb-tm-ACn"/>
+                                            <constraint firstItem="Udy-Gm-uCF" firstAttribute="leading" secondItem="oI7-zK-igQ" secondAttribute="leading" id="p0j-x6-Lrl"/>
+                                            <constraint firstItem="Udy-Gm-uCF" firstAttribute="top" secondItem="oI7-zK-igQ" secondAttribute="top" id="rMU-NO-tMs"/>
+                                            <constraint firstItem="Udy-Gm-uCF" firstAttribute="leading" secondItem="oI7-zK-igQ" secondAttribute="leading" id="xLj-cU-Ncw"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mkK-7Q-17c">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="818"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLP-AB-aMG">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="204.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Sedan"/>
+                                                <connections>
+                                                    <action selector="Sedan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JhX-e7-1h3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpX-bD-9KU">
+                                                <rect key="frame" x="0.0" y="204.5" width="207" height="204.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="SUV"/>
+                                                <connections>
+                                                    <action selector="SUV:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fwn-Vq-Esv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPZ-F3-AyF">
+                                                <rect key="frame" x="0.0" y="409" width="207" height="204.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Truck"/>
+                                                <connections>
+                                                    <action selector="Truck:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0c3-wy-H4q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3T9-A4-78b">
+                                                <rect key="frame" x="0.0" y="613.5" width="207" height="204.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Hatchback"/>
+                                                <connections>
+                                                    <action selector="Hatchback:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i5h-nY-1il"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.98431372549999996" green="0.33725490200000002" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HPT-TJ-orD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jl4-IV-Frb"/>
+                            <constraint firstItem="HPT-TJ-orD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NES-a3-yEX"/>
+                            <constraint firstItem="HPT-TJ-orD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QpN-5v-VKc"/>
+                            <constraint firstItem="HPT-TJ-orD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="f9a-QN-9m7"/>
+                            <constraint firstItem="HPT-TJ-orD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pjl-5Z-uTu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="Udy-Gm-uCF" id="3DV-Yw-Gcm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="82.366071428571431"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Select car body type" width="483" height="51"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
